@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--SLIDER SWIPPER https://bootsnipp.com/snippets/92oZj -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+        /*ROW NUEVOS PROFESIONISTAS*/
+
+        .btn-primary {
+            color: #fff;
+            background-color: #8448ff;
+            border-color: #8448ff;
+        }
+
+        .btn-outline-danger {
+            color: #8448ff;
+            border-color: #8448ff;
+        }
+
+        .btn-outline-danger:hover {
+            color: #fff;
+            background-color: #8448FF;
+            border-color: #8448FF;
+        }
+
+        #top {
+            background-color: #fff;
+        }
+
+        /*CSS PARA SLIDER*/
+        #h2Slider {
+            font-size: 60px;
+        }
+
+        #h4Slider {
+            color: #fff;
+        }
+
+        #slider-animation {
+            max-height: 550px;
+        }
+
+        .heading-box h2 {
+            width: 100%;
+            color: red;
+        }
+
+        h2,
+        p {
+            color: #fff;
+        }
+
+        .carousel-item img {
+            width: 100%;
+        }
+
+        .text-box {
+            position: absolute;
+            top: 50%;
+            left: 15%;
+            right: 15%;
+            color: #000;
+            transform: translateY(-50%);
+        }
+
+        /*ENDING CSS SLIDER*/
+
+        /*CSS PARA SWIPPER*/
+        .divider {
+            border: 1px solid #ccc;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        /*ENDING CSS SWIPPER */
+
+        /* STARTING CSS SERVICIOS */
+        .ptb-50 {
+            padding: 50px 50px;
+        }
+
+        .section_bg_gray {
+            background-color: #f3f5f7;
+        }
+
+        .single_what_we_do {
+            background-color: #ffffff;
+            text-align: center;
+            padding: 0 35px;
+            border-radius: 10px;
+            position: relative;
+            margin-bottom: 30px;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+        .single_what_we_do:hover {
+            -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        .single_what_we_do .top_line {
+            position: absolute;
+            top: 0;
+            left: 44%;
+            background-color: #8448ff;
+            width: 12%;
+            height: 3px;
+        }
+
+        .single_what_we_do .what_we_do_figure {
+            padding: 40px 0;
+        }
+
+        .single_what_we_do .what_we_do_figure img {
+            margin: 0 auto;
+        }
+
+        .single_what_we_do .what_we_do_title {
+            font-weight: 600;
+            font-size: 22px;
+            padding-bottom: 35px;
+            margin: 0;
+            color: #2b353a;
+        }
+
+        .single_what_we_do .what_we_do_content {
+            padding-bottom: 65px;
+            color: #2b353a;
+        }
+
+        .single_what_we_do .what_we_do_icon {
+            position: absolute;
+            bottom: -9px;
+            left: 47%;
+            color: #fff;
+            background-color: #8448ff;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            border-radius: 50%;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+        .single_what_we_do .what_we_do_icon i {
+            font-size: 24px;
+            text-align: center;
+            padding: 2px 3px 2px 5px;
+        }
+
+        /*ENDING CSS SERVICIOS*/
+    </style>
+    <link rel="stylesheet" href="../css/nav.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: rgba(0, 0, 0, .5)">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!--Links on the left-->
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./profile.html">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./professionalProfile.html">Profesionista</a>
+                    </li>
+                </ul>
+                <!--Dropdown on the right-->
+                <ul class="navbar-nav ml-auto nav-flex-icons">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user" style="font-size: 20px;"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-default"
+                            aria-labelledby="navbarDropdownMenuLink-333" style=" background-color: rgba(0, 0, 0, .5);">
+                            <a class="dropdown-item userNavBar" 
+                                href="./login.html">Entrar</a>
+                            <a class="dropdown-item userNavBar" 
+                                href="./registroUsuario.html">Registrarse</a>
+                            <a class="dropdown-item userNavBar" 
+                                href="./registroProfesionista.html">Profesionista</a>
+                        </div>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-default"
+                            aria-labelledby="navbarDropdownMenuLink-333" style=" background-color: rgba(0, 0, 0, .5);">
+                            <a class="dropdown-item userNavBar" href="#" onClick="closeSession()">Cerrar Sesión</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--STARTING SLIDER -->
+    <section>
+        <div id="slider-animation" class="carousel slide" data-ride="carousel">
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/slider2.jpg" alt="slider">
+                    <div class="text-box">
+                        <h2 class="wow slideInRight" data-wow-duration="2s" id="h2Slider">Bienvenido a iServices</h2>
+                        <h4 class="wow slideInLeft" data-wow-duration="2s" id="h4Slider">¿Buscas servicios
+                            profesionales?</h4>
+                        <p class="wow slideInRight" data-wow-duration="3s">Encuéntralos aquí inmediatamente</p>
+                        <a name="" id="" class="btn btn-primary" href="#servicios" role="button">VER SERVICIOS</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slider.jpg" alt="slider2">
+                    <div class="text-box">
+                        <div class="row align-items-center">
+
+                            <div class="col-md-6">
+                                <h2 class="wow fadeInUp" data-wow-duration="4s">Encuentra rápidamente</h2>
+                                <p class="wow fadeInUp" data-wow-duration="2s">Nuestros profesionales de enfermería
+                                </p>
+                            </div>
+                            <div class="col-md-6 wow slideInLeft" data-wow-duration="4s">
+                                <img src="./img/persons.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#slider-animation" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#slider-animation" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </section>
+    <!--ENDING SLIDER-->
+
+    <!--STARTING SERVICIOS -->
+    <div class="section_bg_gray" style="margin-top: -10%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="ptb-50">
+                        <h2 class="text-center" id="servicios">SERVICIOS</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="single_what_we_do">
+                        <div class="top_line"></div>
+                        <div class="what_we_do_figure">
+                            <img src="./icons/carpinteria.png" alt="" class="img-responsive">
+                        </div>
+                        <h4 class="what_we_do_title">CARPINTERÍA</h4>
+                        <div class="what_we_do_content">¿Necesitas algún mueble en especial? Encuentra al profesionista
+                            ideal</div>
+                        <a class="what_we_do_icon" href="./carpinteros.html">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="single_what_we_do">
+                        <div class="top_line"></div>
+                        <div class="what_we_do_figure">
+                            <img src="./icons/enfermeria.png" alt="" class="img-responsive">
+                        </div>
+                        <h4 class="what_we_do_title">ENFERMERÍA</h4>
+                        <div class="what_we_do_content">¿Necesitas cuidados 24/7 para una persona mayor?</div>
+                        <a class="what_we_do_icon" href="./enfermeras.html">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="single_what_we_do">
+                        <div class="top_line"></div>
+                        <div class="what_we_do_figure">
+                            <img src="./icons/fontaneria.png" alt="" class="img-responsive">
+                        </div>
+                        <h4 class="what_we_do_title">FONTANERÍA</h4>
+                        <div class="what_we_do_content">¿Encharcado? Encuentra rápidamente a un fontanero con
+                            experiencia</div>
+                        <a class="what_we_do_icon" href="./fontaneros.html">
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--ENDING SERVICIOS-->
+
+    <!--STARTING PROFESIONISTAS CAROUSEL-->
+    <div class="jumbotron" id="top">
+        <h1 class="display-3 text-center">Nuestros nuevos profesionistas</h1>
+        <hr class="my-2">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+        <div class="container">
+            <div class="row">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="row" id="rowProfesionistas">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img"><img
+                                                src="https://randomuser.me/api/portraits/women/94.jpg">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5>Melanie Lawson</h5>
+                                            <h4 class="pt-1 pb-2">Enfermera</h4>
+
+                                                <a type="button" href="./professionalDetail.html"
+                                                    class="btn btn-outline-danger btn-block btn-sm">CONTRATAR</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img"><img src="./img/chapo.jpeg">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5>Luis Joaquin</h5>
+                                            <h4 class="pt-1 pb-2">Fontanero</h4>
+
+                                                <a type="button" href="./professionalDetail.html"
+                                                    class="btn btn-outline-danger btn-block btn-sm">CONTRATAR</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img"><img src="./img/pallaro.jpg">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5>Alessandro Pallaro</h5>
+                                            <h4 class="pt-1 pb-2">Enfermera</h4>
+
+                                                <a type="button" href="./professionalDetail.html"
+                                                    class="btn btn-outline-danger btn-block btn-sm">CONTRATAR</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img"><img src="./img/denisse.jpg">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5>Ana Hernández</h5>
+                                            <h4 class="pt-1 pb-2">Fontanera</h4>
+                                                <a type="button" href="./professionalDetail.html"
+                                                    class="btn btn-outline-danger btn-block btn-sm">CONTRATAR</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row" id="rowProfesionistas2">
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img"><img
+                                                src="https://randomuser.me/api/portraits/women/94.jpg">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5>Melanie Lawson</h5>
+                                            <h4 class="pt-1 pb-2">Enfermera</h4>
+
+                                                <a type="button" href="./professionalDetail.html"
+                                                    class="btn btn-outline-danger btn-block btn-sm">CONTRATAR</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img"><img src="./img/chapo.jpeg">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5>Luis Joaquin</h5>
+                                            <h4 class="pt-1 pb-2">Fontanero</h4>
+
+                                                <a type="button" href="./professionalDetail.html"
+                                                    class="btn btn-outline-danger btn-block btn-sm">CONTRATAR</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img"><img src="./img/pallaro.jpg">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5>Alessandro Pallaro</h5>
+                                            <h4 class="pt-1 pb-2">Enfermera</h4>
+
+                                                <a type="button" href="./professionalDetail.html"
+                                                    class="btn btn-outline-danger btn-block btn-sm">CONTRATAR</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="card">
+                                        <div class="card-img"><img src="./img/denisse.jpg">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5>Ana Hernández</h5>
+                                            <h4 class="pt-1 pb-2">Fontanera</h4>
+                                                <a type="button" href="./professionalDetail.html"
+                                                    class="btn btn-outline-danger btn-block btn-sm">CONTRATAR</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--ENDING PROFESIONISTAS CAROUSEL-->
+
+
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" 
+        integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" 
+        crossorigin="anonymous">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</body>
+
+
+
+</html>

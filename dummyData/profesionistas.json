@@ -1,0 +1,19 @@
+[
+    {
+        "uid": 1,
+        "nombre": "Juan Fontanero",
+        "apellidos": "Ramirez",
+        "trabajosRealizados": 8,
+        "direccion": "Av. Mexico 1123",
+        "email": "fontanero@mail.com",
+        "edad": 37,
+        "password": "Juan1",
+        "celular": 33333333,
+        "foto": "https://randomuser.me/api/portraits/women/10.jpg",
+        "estado": "Jalisco",
+        "profesionista": 1,
+        "calificacion": 5,
+        "precioPorHora": 300,
+        "descripcion": "Buena onda, entrega inmediata"
+    }
+]

@@ -1,0 +1,16 @@
+[
+    {
+        "uid": 1,
+        "nombre": "Gomitas",
+        "apellidos": "Perez",
+        "direccion": "Hidalgo 1123",
+        "email": "gomitas@mail.com",
+        "edad": 30,
+        "password": "pass",
+        "celular": 123,
+        "foto": "https://randomuser.me/api/portraits/women/10.jpg",
+        "estado": "Jalisco",
+        "profesionista": 0,
+        "favoritos": [1,2,3]
+    }
+]

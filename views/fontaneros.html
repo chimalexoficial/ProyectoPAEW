@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--SLIDER SWIPPER https://bootsnipp.com/snippets/92oZj -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+
+        .btn-primary {
+            color: #fff;
+            background-color: #8448ff;
+            border-color: #8448ff;
+        }
+
+        .btn-outline-danger {
+            color: #8448ff;
+            border-color: #8448ff;
+        }
+
+        .btn-outline-danger:hover {
+            color: #fff;
+            background-color: #8448FF;
+            border-color: #8448FF;
+        }
+
+        #top {
+            background-color: #fff;
+        }
+
+        .divider {
+            border: 1px solid #ccc;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        /*ENDING CSS SWIPPER */
+
+        #carpinteros{
+            text-align: center;
+        }
+        .grid{
+            height: 200px;
+            width: 285px;
+        }
+
+        .grid2{
+            height: 200px;
+            width: 285px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 id="carpinteros">Fontaneros</h1>
+        <!--STARTING PROFESIONISTAS CAROUSEL-->
+        <div class="jumbotron" id="top">
+            <h1 class="display-3 text-center">Top 8 fontaneros</h1>
+            <hr class="my-2">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+            <div class="container">
+                <div class="row">
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="row" id="rowProfesionistas">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img"><img class = "grid2"
+                                                    src="img/m9.jpg">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5>Mariana Silva</h5>
+
+                                                <a type="button" href="./professionalDetail.html"
+                                                    class="btn btn-outline-danger btn-block btn-sm">CONTRATAR</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img"><img src="img/p3.jpg" class = "grid2">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5>Alfred Avalos</h5>
+
+                                                <a type="button" href="./professionalDetail.html"
+                                                    class="btn btn-outline-danger btn-block btn-sm">CONTRATAR</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img"><img src="img/p22.jpg" class = "grid2">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5>David Pallaro</h5>
+
+                                                <a type="button" href="./professionalDetail.html"
+                                                    class="btn btn-outline-danger btn-block btn-sm">CONTRATAR</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img"><img src="img/m7.jpg" class = "grid2">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5>Ana Casilas</h5>
+                                                <a type="button" href="./professionalDetail.html"
+                                                    class="btn btn-outline-danger btn-block btn-sm">CONTRATAR</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="row" id="rowProfesionistas2">
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img"><img class = "grid2"
+                                                    src="img/m5.jpg">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5>Melissa Lawson</h5>
+
+                                                <a type="button" href="./professionalDetail.html"
+                                                    class="btn btn-outline-danger btn-block btn-sm">CONTRATAR</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img"><img src="/img/p20.jpg" class = "grid2">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5>Joaquin Avalos</h5>
+
+                                                <a type="button" href="./professionalDetail.html"
+                                                    class="btn btn-outline-danger btn-block btn-sm">CONTRATAR</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img"><img src="img/HugoPiza.jpg" class = "grid2">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5>Alessandro Pallaro</h5>
+
+                                                <a type="button" href="./professionalDetail.html"
+                                                    class="btn btn-outline-danger btn-block btn-sm">CONTRATAR</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="card">
+                                            <div class="card-img"><img src="img/Valeria.jpg" class = "grid2">
+                                            </div>
+                                            <div class="card-body">
+                                                <h5>Ana Hernández</h5>
+                                                <a type="button" href="./professionalDetail.html"
+                                                    class="btn btn-outline-danger btn-block btn-sm">CONTRATAR</a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--ENDING PROFESIONISTAS CAROUSEL-->
+
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/p10.jpg" class="card-img-top grid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Rodrigo Guzmán</h5>
+                            <p class="card-text"><strong>Calificación: </strong>3 de 5</p>
+                            <a href="#" class="btn btn-primary"> Ver Perfil</a>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/p11.jpg" class="card-img-top grid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fernando Ramírez</h5>
+                            <p class="card-text"><strong>Calificación: </strong>2 de 5</p>
+                            <a href="#" class="btn btn-primary"> Ver Perfil</a>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/p12.jpg" class="card-img-top grid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Juan Hernandez</h5>
+                            <p class="card-text"><strong>Calificación: </strong>4 de 5</p>
+                            <a href="#" class="btn btn-primary"> Ver Perfil</a>
+                        </div>
+                    </div>
+                    <br>
+
+
+
+                </div>
+                <div class="col-sm">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/p13.jpg" class="card-img-top grid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Alexis Rubín</h5>
+                            <p class="card-text"><strong>Calificación: </strong>1 de 5</p>
+                            <a href="#" class="btn btn-primary"> Ver Perfil</a>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/p21.jpg" class="card-img-top grid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Joaquín Soto</h5>
+                            <p class="card-text"><strong>Calificación: </strong>2 de 5</p>
+                            <a href="#" class="btn btn-primary"> Ver Perfil</a>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/p15.jpg" class="card-img-top grid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Dario Meda</h5>
+                            <p class="card-text"><strong>Calificación: </strong>3 de 5</p>
+                            <a href="#" class="btn btn-primary"> Ver Perfil</a>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div class="col-sm">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/p16.jpg" class="card-img-top grid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Luis Piza</h5>
+                            <p class="card-text"><strong>Calificación: </strong>3 de 5</p>
+                            <a href="#" class="btn btn-primary"> Ver Perfil</a>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/p17.jpg" class="card-img-top grid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Alejandro Barragán</h5>
+                            <p class="card-text"><strong>Calificación: </strong>5 de 5</p>
+                            <a href="#" class="btn btn-primary"> Ver Perfil</a>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/p18.jpg" class="card-img-top grid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Felipe Mesa</h5>
+                            <p class="card-text"><strong>Calificación: </strong>4 de 5</p>
+                            <a href="#" class="btn btn-primary"> Ver Perfil</a>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</body>
+
+
+
+</html>

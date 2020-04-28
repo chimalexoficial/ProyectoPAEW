@@ -1,0 +1,13 @@
+/*User dropdown in the navbar*/
+
+.userNavBar {
+    color: white;
+}
+
+
+/*User dropdown hover*/
+
+.userNavBar:hover {
+    background-color: white;
+    color: #444;
+}

@@ -1,0 +1,689 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "Proyecto v1",
+    "version" : "1.0.0",
+    "title" : "iServices API Documentation",
+    "license" : {
+      "name" : "Apache 2.0",
+      "url" : "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  },
+  "host" : "virtserver.swaggerhub.com",
+  "basePath" : "/chimalex/iServices/1.0.0",
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/profesionistas" : {
+      "get" : {
+        "tags" : [ "profesionistas" ],
+        "summary" : "Obtener todos los profesionistas",
+        "description" : "Obtiene todos los profesionistas",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Haz obtenido todos los profesionistas en la base de datos",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Profesionistas"
+              }
+            }
+          }
+        }
+      },
+      "post" : {
+        "tags" : [ "profesionistas" ],
+        "summary" : "Agrega un nuevo profesionista",
+        "description" : "Agregar un nuevo profesionista",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Se ha cargado exitosamente",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Profesionistas"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/profesionistas/{uid}" : {
+      "get" : {
+        "tags" : [ "profesionistas" ],
+        "summary" : "Buscar por ID",
+        "description" : "Busca por ID",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "uid",
+          "in" : "path",
+          "description" : "User ID",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Se ha cargado exitosamente",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Profesionistas"
+              }
+            }
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "profesionistas" ],
+        "summary" : "Editar por ID",
+        "description" : "Edita por ID",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "uid",
+          "in" : "path",
+          "description" : "profesionista ID",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Se ha cargado exitosamente",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Profesionistas"
+              }
+            }
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "profesionistas" ],
+        "summary" : "Borrar por ID",
+        "description" : "Borra por ID",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "uid",
+          "in" : "path",
+          "description" : "User ID",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Se ha cargado exitosamente",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Profesionistas"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/usuarios" : {
+      "get" : {
+        "tags" : [ "usuarios" ],
+        "summary" : "Obtener todos los usuarios",
+        "description" : "Obtiene todos los usuarios",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Haz obtenido todos los usuarios en la base de datos",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Usuario"
+              }
+            }
+          }
+        }
+      },
+      "post" : {
+        "tags" : [ "usuarios" ],
+        "summary" : "Agrega un nuevo usuario",
+        "description" : "Agregar un nuevo usuario",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Se ha cargado exitosamente",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Usuario"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/usuarios/{uid}" : {
+      "get" : {
+        "tags" : [ "usuarios" ],
+        "summary" : "Buscar por ID",
+        "description" : "Busca por ID",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "uid",
+          "in" : "path",
+          "description" : "User ID",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Se ha cargado exitosamente",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Usuario"
+              }
+            }
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "usuarios" ],
+        "summary" : "Editar por ID",
+        "description" : "Edita por ID",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "uid",
+          "in" : "path",
+          "description" : "User ID",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Se ha cargado exitosamente",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Usuario"
+              }
+            }
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "usuarios" ],
+        "summary" : "Borrar por ID",
+        "description" : "Borra por ID",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "uid",
+          "in" : "path",
+          "description" : "User ID",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Se ha cargado exitosamente",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Usuario"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/calificacion" : {
+      "get" : {
+        "tags" : [ "calificacion" ],
+        "summary" : "Obtener todos los calificacion",
+        "description" : "Obtiene todos los calificacion",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Haz obtenido todos los calificacion en la base de datos",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Calificacion"
+              }
+            }
+          }
+        }
+      },
+      "post" : {
+        "tags" : [ "calificacion" ],
+        "summary" : "Agrega un nuevo calificacion",
+        "description" : "Agregar un nuevo calificacion",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Se ha cargado exitosamente",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Calificacion"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/calificacion/{uid}" : {
+      "get" : {
+        "tags" : [ "calificacion" ],
+        "summary" : "Buscar por ID",
+        "description" : "Busca por ID",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "uid",
+          "in" : "path",
+          "description" : "calificacion ID",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Se ha cargado exitosamente",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Calificacion"
+              }
+            }
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "calificacion" ],
+        "summary" : "Editar por ID",
+        "description" : "Edita por ID",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "uid",
+          "in" : "path",
+          "description" : "calificacion ID",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Se ha cargado exitosamente",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Calificacion"
+              }
+            }
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "calificacion" ],
+        "summary" : "Borrar por ID",
+        "description" : "Borra por ID",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "uid",
+          "in" : "path",
+          "description" : "User ID",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Se ha cargado exitosamente",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Calificacion"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/servicios" : {
+      "get" : {
+        "tags" : [ "servicios" ],
+        "summary" : "Obtener todos los servicios",
+        "description" : "Obtiene todos los servicios",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Haz obtenido todos los servicios en la base de datos",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Servicios"
+              }
+            }
+          }
+        }
+      },
+      "post" : {
+        "tags" : [ "servicios" ],
+        "summary" : "Agrega un nuevo servicio",
+        "description" : "Agregar un nuevo servicio",
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "Se ha cargado exitosamente",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Servicios"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/servicios/{uid}" : {
+      "get" : {
+        "tags" : [ "servicios" ],
+        "summary" : "Buscar por ID",
+        "description" : "Busca por ID",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "uid",
+          "in" : "path",
+          "description" : "servicios ID",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Se ha cargado exitosamente",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Servicios"
+              }
+            }
+          }
+        }
+      },
+      "put" : {
+        "tags" : [ "servicios" ],
+        "summary" : "Editar por ID",
+        "description" : "Edita por ID",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "uid",
+          "in" : "path",
+          "description" : "servicios ID",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Se ha cargado exitosamente",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Servicios"
+              }
+            }
+          }
+        }
+      },
+      "delete" : {
+        "tags" : [ "servicios" ],
+        "summary" : "Borrar por ID",
+        "description" : "Borra por ID",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "uid",
+          "in" : "path",
+          "description" : "servicios ID",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "Se ha cargado exitosamente",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Servicios"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/auth" : {
+      "post" : {
+        "tags" : [ "autenticación" ],
+        "summary" : "Autenticación de usuarios en BD",
+        "description" : "Por token JWT",
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "email",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        }, {
+          "name" : "password",
+          "in" : "path",
+          "required" : true,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "OK",
+            "schema" : {
+              "type" : "array",
+              "items" : {
+                "$ref" : "#/definitions/Usuario"
+              }
+            }
+          },
+          "400" : {
+            "description" : "Parametros no recibidos"
+          },
+          "401" : {
+            "description" : "El usuario no existe"
+          },
+          "403" : {
+            "description" : "No tienes permisos"
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Usuario" : {
+      "type" : "object",
+      "required" : [ "apellidos", "celular", "direccion", "edad", "email", "estado", "favoritos", "foto", "nombre", "password", "profesionista", "uid" ],
+      "properties" : {
+        "uid" : {
+          "type" : "number",
+          "example" : 1.0
+        },
+        "nombre" : {
+          "type" : "string",
+          "example" : "Juan"
+        },
+        "apellidos" : {
+          "type" : "string",
+          "example" : "Perez"
+        },
+        "direccion" : {
+          "type" : "string",
+          "example" : "Av. Hidalgo 1122"
+        },
+        "email" : {
+          "type" : "string",
+          "example" : "juan@mail.com"
+        },
+        "edad" : {
+          "type" : "number",
+          "example" : 22.0
+        },
+        "password" : {
+          "type" : "string",
+          "example" : "Juan1234"
+        },
+        "celular" : {
+          "type" : "number",
+          "example" : 3.33626789E9
+        },
+        "foto" : {
+          "type" : "string",
+          "example" : "http://s3.com/s1.jpg"
+        },
+        "estado" : {
+          "type" : "string",
+          "example" : "Jalisco"
+        },
+        "profesionista" : {
+          "type" : "boolean",
+          "example" : false
+        },
+        "favoritos" : {
+          "type" : "array",
+          "example" : "1,2,3",
+          "items" : {
+            "$ref" : "#/definitions/arrayFav"
+          }
+        }
+      }
+    },
+    "arrayFav" : {
+      "type" : "object",
+      "properties" : {
+        "uid" : {
+          "type" : "number"
+        }
+      }
+    },
+    "Profesionistas" : {
+      "type" : "object",
+      "required" : [ "apellidos", "calificacion", "celular", "descripcion", "direccion", "edad", "email", "estado", "foto", "nombre", "password", "precioPorHora", "profesionista", "trabajosRealizados", "uid" ],
+      "properties" : {
+        "uid" : {
+          "type" : "number",
+          "example" : 1.0
+        },
+        "nombre" : {
+          "type" : "string",
+          "example" : "Juan"
+        },
+        "apellidos" : {
+          "type" : "string",
+          "example" : "Perez"
+        },
+        "trabajosRealizados" : {
+          "type" : "number",
+          "example" : 8.0
+        },
+        "direccion" : {
+          "type" : "string",
+          "example" : "Av. Hidalgo 1122"
+        },
+        "email" : {
+          "type" : "string",
+          "example" : "juan@mail.com"
+        },
+        "edad" : {
+          "type" : "number",
+          "example" : 22.0
+        },
+        "password" : {
+          "type" : "string",
+          "example" : "Juan1234"
+        },
+        "celular" : {
+          "type" : "number",
+          "example" : 3.33626789E9
+        },
+        "foto" : {
+          "type" : "string",
+          "example" : "http://s3.com/s1.jpg"
+        },
+        "estado" : {
+          "type" : "string",
+          "example" : "Jalisco"
+        },
+        "profesionista" : {
+          "type" : "boolean",
+          "example" : false
+        },
+        "calificacion" : {
+          "type" : "number",
+          "example" : 5.0
+        },
+        "precioPorHora" : {
+          "type" : "number",
+          "example" : 400.0
+        },
+        "descripcion" : {
+          "type" : "string",
+          "example" : "rapido y eficaz"
+        }
+      }
+    },
+    "Calificacion" : {
+      "type" : "object",
+      "required" : [ "calificacion", "comentario", "uid", "uidProfesionista", "uidUsuario" ],
+      "properties" : {
+        "uid" : {
+          "type" : "number",
+          "example" : 1.0
+        },
+        "uidUsuario" : {
+          "type" : "number",
+          "example" : 1.0
+        },
+        "uidProfesionista" : {
+          "type" : "number",
+          "example" : 1.0
+        },
+        "calificacion" : {
+          "type" : "number",
+          "example" : 5.0
+        },
+        "comentario" : {
+          "type" : "string",
+          "example" : "Muy buen jale. Excelente servicio"
+        }
+      }
+    },
+    "Servicios" : {
+      "type" : "object",
+      "required" : [ "fecha", "profesionista", "tipo", "uid", "usuario" ],
+      "properties" : {
+        "uid" : {
+          "type" : "number",
+          "example" : 1.0
+        },
+        "profesionista" : {
+          "type" : "number",
+          "example" : 1.0
+        },
+        "usuario" : {
+          "type" : "number",
+          "example" : 1.0
+        },
+        "fecha" : {
+          "type" : "string",
+          "example" : "5"
+        },
+        "tipo" : {
+          "type" : "string",
+          "example" : "Fontaneria"
+        }
+      }
+    }
+  }
+}
