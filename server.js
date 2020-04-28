@@ -9,7 +9,7 @@ const swaggerDoc = require('./doc/swagger.json');
 var busboy = require('connect-busboy');
 const fileUpload = require('express-fileupload');
 const validUrl = require('valid-url');
-const io = require('socket.io')(http);
+
 
 app.use('/doc', swaggerUI.serve, swaggerUI.setup(swaggerDoc));
 app.use(bodyParser.json());
@@ -139,13 +139,17 @@ app.post('/api/upload', function (req, res, next) {
     req.pipe(busboy);
 });
 
+
+
+
+const http = require('http').Server(app);
+const io = require('socket.io')(http);
+
 io.on('connection', (socket) => {
     
     const chat = require('./src/chat')(socket, io);
 })
 
-
-const http = require('http').Server(app);
 
 module.exports = app;
 
