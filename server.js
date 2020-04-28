@@ -67,8 +67,8 @@ app.get('/', (req, res) => {
 mongoose.connect(
     process.env.DB_CONNECTION, {
         useUnifiedTopology: true
-    },
-    () => console.log('Conectado a MongoDB')
+    }/*,
+    () => console.log('Conectado a MongoDB')*/
 );
 
 const AWS = require('aws-sdk');
@@ -145,3 +145,5 @@ app.listen(port, err => {
     }
     console.log(`Listening on port: ${port}`);
 })
+
+module.exports = app;
