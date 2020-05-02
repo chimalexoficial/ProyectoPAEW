@@ -10,6 +10,7 @@ var busboy = require('connect-busboy');
 const fileUpload = require('express-fileupload');
 const validUrl = require('valid-url');
 
+
 app.use('/doc', swaggerUI.serve, swaggerUI.setup(swaggerDoc));
 app.use(bodyParser.json());
 app.use(busboy());
@@ -139,11 +140,24 @@ app.post('/api/upload', function (req, res, next) {
 });
 
 
-app.listen(port, err => {
-    if (err) {
-        return console.log("ERROR");
-    }
-    console.log(`Listening on port: ${port}`);
+
+
+const http = require('http').Server(app);
+const io = require('socket.io')(http);
+
+io.on('connection', (socket) => {
+    
+    const chat = require('./src/chat')(socket, io);
 })
 
+
 module.exports = app;
+
+http.listen(port, () => console.log(`Listening on port ${port}`));
+
+// app.listen(port, err => {
+//     if (err) {
+//         return console.log("ERROR");
+//     }
+//     console.log(`Listening on port: ${port}`);
+// })
